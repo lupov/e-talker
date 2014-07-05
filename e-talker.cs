@@ -291,7 +291,7 @@ namespace eTalker
             string text;
             try
             {
-                text = File.ReadAllText(@"Lessons1.xml", System.Text.Encoding.GetEncoding(65001));
+                text = File.ReadAllText(@"Lesson1.xml", System.Text.Encoding.GetEncoding(65001));
             }
             catch (System.IO.FileNotFoundException)
             {
