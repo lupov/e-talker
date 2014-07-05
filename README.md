@@ -1,7 +1,9 @@
+e-talker
+------------
 e-talker is .net application for studying english. 
 Prepared english phrases are spoken in a random order.
 You have to recall the translation of the phrase
-and after a short pause it are spoken by the program automatically.
+and after a short pause it is spoken by the program automatically.
 
 Requirements
 ------------
