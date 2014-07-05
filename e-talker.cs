@@ -61,6 +61,43 @@ namespace eTalker
         {
             Form1_Resize(sender, e);
             lbText.Dock = DockStyle.Fill;
+            mplayer = new MP3Player();
+            mplayer.SongEnd += new MP3Player.SongEndEventHandler(mplayer_SongEnd);
+
+            dataGridView1.DefaultCellStyle.Font = new Font(dataGridView1.DefaultCellStyle.Font, FontStyle.Bold);
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
+            dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
+
+#if DEBUG
+                Environment.CurrentDirectory = "..\\..";
+#endif
+            string text;
+            try
+            {
+                text = File.ReadAllText(@"Lessons1.xml", System.Text.Encoding.GetEncoding(65001));
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Title = "Выберите файл с уроком";
+                openFileDialog.Filter = "XML файлы|*.xml";
+                openFileDialog.InitialDirectory = Environment.CurrentDirectory;
+                if (openFileDialog.ShowDialog() != DialogResult.OK) return;
+                try
+                {
+                    text = File.ReadAllText(openFileDialog.FileName, System.Text.Encoding.GetEncoding(65001));
+                }
+                catch (System.IO.FileNotFoundException)
+                {
+                    return;
+                }
+            }
+            XMLParser(text);
+            return;
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -274,43 +311,6 @@ namespace eTalker
 
         private void Form1_Shown(object sender, EventArgs e)
         {
-            mplayer = new MP3Player();
-            mplayer.SongEnd += new MP3Player.SongEndEventHandler(mplayer_SongEnd);
-
-            dataGridView1.DefaultCellStyle.Font = new Font(dataGridView1.DefaultCellStyle.Font, FontStyle.Bold);
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
-            dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
-            foreach (DataGridViewColumn column in dataGridView1.Columns)
-            {
-                column.SortMode = DataGridViewColumnSortMode.NotSortable;
-            }
-
-#if DEBUG
-                Environment.CurrentDirectory = "..\\..";
-#endif
-            string text;
-            try
-            {
-                text = File.ReadAllText(@"Lessons1.xml", System.Text.Encoding.GetEncoding(65001));
-            }
-            catch (System.IO.FileNotFoundException)
-            {
-                OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.Title = "Выберите файл с уроком";
-                openFileDialog.Filter = "XML файлы|*.xml";
-                openFileDialog.InitialDirectory = Environment.CurrentDirectory;
-                if (openFileDialog.ShowDialog() != DialogResult.OK) return;
-                try
-                {
-                    text = File.ReadAllText(openFileDialog.FileName, System.Text.Encoding.GetEncoding(65001));
-                }
-                catch (System.IO.FileNotFoundException)
-                {
-                    return;
-                }
-            }
-            XMLParser(text);
-            return;
         }
 
         void XMLParser(string text)
