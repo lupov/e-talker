@@ -397,8 +397,12 @@ namespace eTalker
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-//            AboutBox1 aboutBox = new AboutBox1();
-//            aboutBox.ShowDialog();
+        }
+
+        private void helpToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormHelp formHelp = new FormHelp();
+            formHelp.Show();
         }
     }
 }   
