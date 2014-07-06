@@ -56,11 +56,45 @@ namespace eTalker
             InitializeComponent();
         }
 
-
         private void Form1_Load(object sender, EventArgs e)
         {
             Form1_Resize(sender, e);
             lbText.Dock = DockStyle.Fill;
+            mplayer = new MP3Player();
+            mplayer.SongEnd += new MP3Player.SongEndEventHandler(mplayer_SongEnd);
+
+            dataGridView1.DefaultCellStyle.Font = new Font(dataGridView1.DefaultCellStyle.Font, FontStyle.Bold);
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
+            dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+#if DEBUG
+            Environment.CurrentDirectory = "..\\..";
+#endif
+            string text = "";
+            const string xml_file_name = @"Lesson1.xml";
+            if (!File.Exists(xml_file_name))
+            {
+                string md = Environment.GetFolderPath(Environment.SpecialFolder.Personal) +
+                                                    @"\e-talker.ru"; //My Documents path
+                if (Directory.Exists(md) == true) 
+                    Environment.CurrentDirectory = md;
+            }
+            try
+            {
+                text = File.ReadAllText(xml_file_name, System.Text.Encoding.GetEncoding(65001));
+                XMLParser(text);
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                openXMLFileToolStripMenuItem.PerformClick();
+            }
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -272,47 +306,6 @@ namespace eTalker
             if(e.RowIndex>=0)Row_Sel_Unsel();
         }
 
-        private void Form1_Shown(object sender, EventArgs e)
-        {
-            mplayer = new MP3Player();
-            mplayer.SongEnd += new MP3Player.SongEndEventHandler(mplayer_SongEnd);
-
-            dataGridView1.DefaultCellStyle.Font = new Font(dataGridView1.DefaultCellStyle.Font, FontStyle.Bold);
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
-            dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
-            foreach (DataGridViewColumn column in dataGridView1.Columns)
-            {
-                column.SortMode = DataGridViewColumnSortMode.NotSortable;
-            }
-
-#if DEBUG
-                Environment.CurrentDirectory = "..\\..";
-#endif
-            string text;
-            try
-            {
-                text = File.ReadAllText(@"Lessons1.xml", System.Text.Encoding.GetEncoding(65001));
-            }
-            catch (System.IO.FileNotFoundException)
-            {
-                OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.Title = "Выберите файл с уроком";
-                openFileDialog.Filter = "XML файлы|*.xml";
-                openFileDialog.InitialDirectory = Environment.CurrentDirectory;
-                if (openFileDialog.ShowDialog() != DialogResult.OK) return;
-                try
-                {
-                    text = File.ReadAllText(openFileDialog.FileName, System.Text.Encoding.GetEncoding(65001));
-                }
-                catch (System.IO.FileNotFoundException)
-                {
-                    return;
-                }
-            }
-            XMLParser(text);
-            return;
-        }
-
         void XMLParser(string text)
         {
         string main_dir;
@@ -381,10 +374,6 @@ namespace eTalker
                     Phrase[i, 2][n] = main_dir+"\\"+match_dir.Groups[1].Value + "\\" + Phrase[i, 2][n];
                 }
             }
-        }
-        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
