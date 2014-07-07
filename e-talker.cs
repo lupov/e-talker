@@ -27,7 +27,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
+//using System.Linq;
 using System.Text;
 //using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -403,6 +403,12 @@ namespace eTalker
         {
             FormHelp formHelp = new FormHelp();
             formHelp.Show();
+        }
+
+        private void aboutToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FormAbout formAbout = new FormAbout();
+            formAbout.ShowDialog();
         }
     }
 }   

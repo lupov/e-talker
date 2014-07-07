@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("e-Talker")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("e-talker")]
+[assembly: AssemblyDescription("e-talker is free software for English learning")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("e-Talker")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCompany("http://e-talker.ru")]
+[assembly: AssemblyProduct("e-talker")]
+[assembly: AssemblyCopyright("Copyright ©  2014 Sergey Lupov, Natalia Fradkina")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
