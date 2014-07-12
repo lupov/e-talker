@@ -63,13 +63,15 @@ namespace eTalker
             this.tbBrief = new System.Windows.Forms.TextBox();
             this.rtbGPLBrief = new System.Windows.Forms.RichTextBox();
             this.btnOk = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbProductName
             // 
             this.lbProductName.AutoSize = true;
             this.lbProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbProductName.Location = new System.Drawing.Point(127, 9);
+            this.lbProductName.Location = new System.Drawing.Point(182, 9);
             this.lbProductName.Name = "lbProductName";
             this.lbProductName.Size = new System.Drawing.Size(41, 13);
             this.lbProductName.TabIndex = 1;
@@ -79,7 +81,7 @@ namespace eTalker
             // 
             this.lbVersion.AutoSize = true;
             this.lbVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbVersion.Location = new System.Drawing.Point(127, 28);
+            this.lbVersion.Location = new System.Drawing.Point(182, 28);
             this.lbVersion.Name = "lbVersion";
             this.lbVersion.Size = new System.Drawing.Size(41, 13);
             this.lbVersion.TabIndex = 2;
@@ -97,7 +99,7 @@ namespace eTalker
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(67, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 13);
             this.label1.TabIndex = 6;
@@ -106,7 +108,7 @@ namespace eTalker
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 28);
+            this.label2.Location = new System.Drawing.Point(67, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 7;
@@ -115,7 +117,7 @@ namespace eTalker
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 47);
+            this.label3.Location = new System.Drawing.Point(67, 47);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 13);
             this.label3.TabIndex = 8;
@@ -124,7 +126,7 @@ namespace eTalker
             // llbWebSite
             // 
             this.llbWebSite.AutoSize = true;
-            this.llbWebSite.Location = new System.Drawing.Point(127, 47);
+            this.llbWebSite.Location = new System.Drawing.Point(182, 47);
             this.llbWebSite.Name = "llbWebSite";
             this.llbWebSite.Size = new System.Drawing.Size(55, 13);
             this.llbWebSite.TabIndex = 9;
@@ -169,6 +171,15 @@ namespace eTalker
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(59, 54);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormAbout
             // 
             this.AcceptButton = this.btnOk;
@@ -177,6 +188,7 @@ namespace eTalker
             this.CancelButton = this.btnOk;
             this.ClientSize = new System.Drawing.Size(319, 343);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.rtbGPLBrief);
             this.Controls.Add(this.tbBrief);
@@ -192,6 +204,7 @@ namespace eTalker
             this.ShowInTaskbar = false;
             this.Text = " About";
             this.Load += new System.EventHandler(this.FormAbout_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,6 +222,7 @@ namespace eTalker
         private System.Windows.Forms.TextBox tbBrief;
         private System.Windows.Forms.RichTextBox rtbGPLBrief;
         private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.PictureBox pictureBox1;
 
     }
 }

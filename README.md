@@ -7,6 +7,6 @@ and after a short pause it is spoken by the program automatically.
 
 Requirements
 ------------
-1. .NET Framework 3.5 or higher
+1. .NET Framework 2.0 or higher
 2. Windows Forms Application Visual C# (VS 2013)
 

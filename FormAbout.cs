@@ -133,7 +133,7 @@ namespace eTalker
 #if(DEBUG)
             rtbGPLBrief.LoadFile(Path.GetDirectoryName(Application.ExecutablePath)+@"\..\..\GPL_brief.rtf");
 #else
-            rtbGPLBrief.LoadFile(Path.GetDirectoryName(Application.ExecutablePath)+@"GPL_brief.rtf");
+            rtbGPLBrief.LoadFile(Path.GetDirectoryName(Application.ExecutablePath)+@"\GPL_brief.rtf");
 #endif
         }
 

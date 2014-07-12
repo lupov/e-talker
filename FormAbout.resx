@@ -122,4 +122,41 @@
 Глаголы  в  сочетании  с субъектными  местоимениями произносятся в случайном порядке в настоящем, прошедшем и будущем временах в вопросительных, утвердительных и отрицательных формах.
 Необходимо самостоятельно вспомнить перевод фразы, который после небольшой паузы произносится программой автоматически для самоконтроля.</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhNQA3AIf/AAAA/wAA/QIC/AQE/wYG/wcH/QgI/woK/QsL/wwM/Q0N/w0N+g4O/w8P/Q8P+RAQ
+        /BAQ+xER/xIS/hIS9xMT/xQU/hQU9xUV/RQU8BcX/xkZ/xkZ/Rsb/xsb/Rwc/B0d/x0d+R4e/yEh/yEh
+        /SAg+CMj/yMj9iMj9Ccn/ycn/Skp/ysr/yws/Ckp7S0t/yws9i4u/S8v/zAw/zAw/S4u9TIy/DIy+zMz
+        /zEx9DU1/zc3/zk5/zk5/Dc39jY28Dg49zs7/zs7/Tw8/zs7+Ts79T4+/z8//UBA/UFB/z8/+EVF/0RE
+        /END+EZG/UdH/0lJ/0pK/UtL/0lJ9k9P/k1N909P9lNT/1RU/VNT+lJS91FR9lRU+1dX/1VV9VlZ/1tb
+        /1hY91dX81tb/V1d/1tb+V5e/1dX7GBg/19f/WBg+mNj/2Ji+2Rk/2Nj/WRk/WJi92dn/2dn/Glp/2pq
+        /2lp/Gtr/G1t/2tr+2pq+G5u/25u/HFx/3Fx/XNz/3R0/nd3/3h4/3Z2+nl5/HZ293V19Ht7/3l5+X19
+        /3l59n5+/4GB/3199oOD/4GB+YOD/IeH/4aG/YWF/IiI/ouL/42N/4+P/4uL+ImJ8pGR/5OT/4+P+ZWV
+        /5eX/5aW/JmZ/5iY/Zqa/5eX+5yc/5+f/6Cg/5+f/Z2d+pub+KKi/5yc9aWl/6en/6mp/6qq/6Wl+Kmp
+        +a2t/qur+6+v/62t/Kqq97Gx/7Oz/6ys9bW1/66u9rKy+rKy97q6/7W197m5+r+//7m59sHB/7+/+8HB
+        /cTE/7299bu78sbG/8LC+MnJ/8XF+svL/8zM/8fH+L6+7c/P/8zM+9HR/9DQ/s/P/dPT/9XV/9fX/9TU
+        /NnZ/9fX/NLS9tvb/9ra/dnZ/NbW+d3d/9/f/93d/eHh/+Pj/+Hh/eTk/+Li/Ofn/+Xl/enp/+bm/Orq
+        /+np/erq/e3t/+7u/+3t/e/v/vHx//Pz//X1//b2//T0/fj4//r6/8DAwAAAAAAAAAAAAAAAAAAAAAAA
+        ACH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAD5ACwAAAAANQA3AAAI/wDzCRxIMN+6QnvaFVzIsKHDhwTx
+        KTLCRBzEixgxHtrgg0/GjyAJygEAbw+lkCgxLhIgzw+AcSljNszWYN01Ct9k6iQoD0mpYgly7hxKDQSW
+        ATCH7pyHxMAfpUrBGagEdSgrCw2sVZU5TwUfUVq2xqSmAds9I5LoiQU5bkcMefnO7QjSbG3GQgAACK1X
+        qQGoetHgnDnz1y7BVjkAKIE7UNwOFSTcqIGzQkc9w/nSDQDwAJhAceKYsbGSxQbjXyswOYyXDM0pbEJB
+        rkJgp1o+XHIMGHiixnalItTywbqxiaG8P020wOHzp8QcZowvznNCTKAsFAFyqKp3Lsq7fJhClP8LVZzh
+        pBjPCI4T5aTIOYyT4OS7twlAikYK84GzgU4gOLUNPaNEOQydMwYMvUD0iQHbqCKEDE0gQxApFST1kDhF
+        QOPQOlUs8F5D7LQwiyg6bHcZQWcgddEcKMwD0RzlLYQOJjfIkQMx6Vg0ED7VuHDGMhedYUdB9mxTEDF+
+        LGSLHBIAwMIfX2iQAQdlSCPQMUWU4AUbFyXCDEGxSHFBKwRRc0hB9SQGQAHc5FNLMuJEc4YCmOBByBgG
+        8BJCcA/JMclA1BgRTTBCfCdQNGcSNEoAEwAABkObUHASHFycA0AfEI1CgFb5qPFKPvXMMM1A1SRSkB0A
+        HNCHOw3pyMYo+aD/IB9EmxRRzTuRwIUJDtoMNMxTBG2zhyrr1BEGG6AwFM4QypQDChkYZcJBGoMA0wcS
+        3gxkTw9DMsQGCrrQgUQcvbgoEDxmQAAFL/lQkQxG5XTixiXMxEOQNAWkt5A4AOwh0DygHLHDd9UYEcAZ
+        5noCyE57tMhQPDfkQRA9lASRRwiMSIDKQOBMYW9M4uSwcUPvfEjQJpOk080HJufDhSEywfGITIi0UZAm
+        BBCIEiQ7AJjSH9URRI4ERoJEz3m2yKTOD+AsZMoROmIk1w4to2SNvwu5A0AdGY0iwyQ+xwQKpgxxYkKb
+        DslDTRU8kDIUOEAIQ5AxvgxkxRgNxWMJEBxU/3IiwwCYjA4GuQyECgHrGJQPPOPQEscSbYCis1Jq/DnQ
+        Nxmw6t8ZjyRyxRsndPDCGreIhQoSf+fjDgOgVAMHHEKgwAAm4vyCijj5bSUPCt2KA04yZeRFBBlqSB41
+        ZuAEQMcuYlAgwh1wAKKDI5i1GgENgXwRQCoDnfOEHJyU01/1AtUDDjv5yGOAzQPVA8ofKzjQRjrkF1SO
+        Dl7QL5A1fmwRQRn6q18+xqGGJqyBfvPQQgfE4Iqqke8cSPBC1DbBhskJUCDlyIHlBqKHXVywIGNwwT0K
+        AohhfFAg4/CCExwIB6wJsByj0MEXLHIOcMSmGkIwR/2cEYYRJAFWAgEEAjlEAAdRpMMRNegV+ephjdgI
+        BBuqSIcohOCBLjhwLfKQRz3qMQ8tykIQtcjHPO4hjmfAYx7xSJ1OAgIAOw==
+</value>
+  </data>
 </root>

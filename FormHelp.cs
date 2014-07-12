@@ -52,7 +52,7 @@ namespace eTalker
 #if(DEBUG)
             richTextBox1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath)+@"\..\..\Help.rtf");
 #else
-            richTextBox1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath)+@"Help.rtf");
+            richTextBox1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath)+@"\Help.rtf");
 #endif
         }
     }
