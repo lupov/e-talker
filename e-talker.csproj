@@ -54,8 +54,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>
-    </ApplicationIcon>
+    <ApplicationIcon>mouse_128x128.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -135,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mouse.ico" />
+    <Content Include="mouse_128x128.ico" />
     <Content Include="mouse_48x48.ico" />
     <Content Include="mouse_x48x48.ico" />
   </ItemGroup>

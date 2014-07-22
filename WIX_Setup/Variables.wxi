@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  
+  <?define ProductName="e-talker" ?>
+  <?define ProductVersion="1.0.0.0" ?>
+  <?define ProductCode="{9399E462-2F64-452F-A9B9-327C33AF4514}"?>
+  <?define UpgradeCode="{BA00DC8B-5484-47CB-8EC0-1F7EE7613EA4}"?>
+  <?define Manufacturer="e-talker.ru"?>
+  
+</Include>

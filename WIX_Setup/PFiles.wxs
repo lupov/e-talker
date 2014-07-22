@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <DirectoryRef Id="INSTALLLOCATION" FileSource="..\">
+      <Component Id="ProgramFilesComponent" Guid="{6AF334E6-86FD-4C2C-BAE3-8DC1E759608E}" DiskId='1'>
+        <File Id='etalker_exe_Id' Source="..\bin\Release\e-talker.exe"/>
+        <File Id='Lesson1_Id' Name='Lesson1.xml'/>
+        <File Id='Help_Id' Name='Help.rtf'/>
+        <File Id='GPL_brief_Id' Name='GPL_brief.rtf'/>
+        <File Id='LICENSE_Id' Name='LICENSE'/>
+        <File Id='License_rus_Id' Name='License_rus.rtf'/>
+      </Component>
+      
+    </DirectoryRef>
+
+  </Fragment>
+</Wix>

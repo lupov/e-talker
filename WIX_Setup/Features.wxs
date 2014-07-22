@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+    <Feature Id="ProductFeature" Title="Приложение e-talker"
+         Description="Устанавливаются приложение и самые необходимые компоненты"
+         Level="1" ConfigurableDirectory="INSTALLLOCATION">
+      <ComponentRef Id="ProgramFilesComponent" />
+      <ComponentRef Id="PMenu_Shortcut_etalker" />
+      <ComponentRef Id="Desktop_Shortcut_etalker" />
+      <Feature Id="MP3_Feature" Title="MP3 файлы"
+               Description="Необходимы для озвучивания фраз. Без этого раздела приложение будет работать только в текстовом режиме"
+               Level="1">
+        <ComponentGroupRef Id="MP3Files_Id"/>
+      </Feature>
+    </Feature>
+
+    <!--Feature Id="ProductFeature" Title="e-talker (запоминание английских глаголов)"
+         Description="Позволяет запомнить произношения английских глаголов"
+         Level="1">
+    </Feature-->
+
+  </Fragment>
+</Wix>

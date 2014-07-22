@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+
+  <?include Variables.wxi?>
+  <Product Id="$(var.ProductCode)" Name="$(var.ProductName)" Language="1049" Version="$(var.ProductVersion)" Manufacturer="$(var.Manufacturer)" UpgradeCode="$(var.UpgradeCode)">
+    <Package InstallerVersion="200" Compressed="yes" />
+
+    <Media Id="1" Cabinet="etalker.cab" EmbedCab="yes" />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLLOCATION" Name="$(var.ProductName)"/>
+      </Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="$(var.ProductName)"/>
+      </Directory>
+      <Directory Id="DesktopFolder" Name="$(var.ProductName)"/>
+    </Directory>
+
+    <FeatureRef Id="ProductFeature"/>
+    <!--FeatureRef Id="Feature_etalker_shortcut"/-->
+
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION" ></Property>
+    <WixVariable Id="WixUILicenseRtf" Overridable="yes" Value="..\License_rus.rtf"/>
+    <UIRef Id="WixUI_Wizard"/>
+
+    <Property Id="SHORTCUT_PROGRAMMENU">1</Property>
+    <Property Id="SHORTCUT_DESKTOP">1</Property>
+    
+    <Condition Message="Для установки требуется .NET Framework 2.0 или выше.">
+      <![CDATA[Installed OR NETFRAMEWORK20]]>
+    </Condition>
+    <PropertyRef Id="NETFRAMEWORK20"/>
+
+    <Property Id="ARPPRODUCTICON" Value="mouse_128x128.ico" /> 
+    <Icon Id="mouse_128x128.ico" SourceFile="mouse_128x128.ico" />
+  </Product>
+</Wix>
