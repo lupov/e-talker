@@ -64,6 +64,8 @@ namespace eTalker
             this.rtbGPLBrief = new System.Windows.Forms.RichTextBox();
             this.btnOk = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.llbSourceCode = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +92,7 @@ namespace eTalker
             // lbCopyright
             // 
             this.lbCopyright.AutoSize = true;
-            this.lbCopyright.Location = new System.Drawing.Point(9, 176);
+            this.lbCopyright.Location = new System.Drawing.Point(9, 196);
             this.lbCopyright.Name = "lbCopyright";
             this.lbCopyright.Size = new System.Drawing.Size(35, 13);
             this.lbCopyright.TabIndex = 3;
@@ -139,7 +141,7 @@ namespace eTalker
             this.tbBrief.BackColor = System.Drawing.SystemColors.Control;
             this.tbBrief.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbBrief.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbBrief.Location = new System.Drawing.Point(15, 69);
+            this.tbBrief.Location = new System.Drawing.Point(9, 89);
             this.tbBrief.Multiline = true;
             this.tbBrief.Name = "tbBrief";
             this.tbBrief.Size = new System.Drawing.Size(298, 104);
@@ -149,7 +151,7 @@ namespace eTalker
             // 
             // rtbGPLBrief
             // 
-            this.rtbGPLBrief.Location = new System.Drawing.Point(12, 200);
+            this.rtbGPLBrief.Location = new System.Drawing.Point(12, 212);
             this.rtbGPLBrief.Name = "rtbGPLBrief";
             this.rtbGPLBrief.ReadOnly = true;
             this.rtbGPLBrief.ShortcutsEnabled = false;
@@ -163,7 +165,7 @@ namespace eTalker
             // btnOk
             // 
             this.btnOk.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnOk.Location = new System.Drawing.Point(121, 311);
+            this.btnOk.Location = new System.Drawing.Point(120, 335);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 0;
@@ -174,11 +176,31 @@ namespace eTalker
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(59, 54);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(67, 66);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Исходный код:";
+            // 
+            // llbSourceCode
+            // 
+            this.llbSourceCode.AutoSize = true;
+            this.llbSourceCode.Location = new System.Drawing.Point(146, 66);
+            this.llbSourceCode.Name = "llbSourceCode";
+            this.llbSourceCode.Size = new System.Drawing.Size(166, 13);
+            this.llbSourceCode.TabIndex = 9;
+            this.llbSourceCode.TabStop = true;
+            this.llbSourceCode.Text = "https://github.com/lupov/e-talker";
+            this.llbSourceCode.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbSourceCode_LinkClicked);
             // 
             // FormAbout
             // 
@@ -186,19 +208,21 @@ namespace eTalker
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnOk;
-            this.ClientSize = new System.Drawing.Size(319, 343);
+            this.ClientSize = new System.Drawing.Size(319, 370);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.rtbGPLBrief);
             this.Controls.Add(this.tbBrief);
+            this.Controls.Add(this.llbSourceCode);
             this.Controls.Add(this.llbWebSite);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbCopyright);
             this.Controls.Add(this.lbVersion);
             this.Controls.Add(this.lbProductName);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FormAbout";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -223,6 +247,8 @@ namespace eTalker
         private System.Windows.Forms.RichTextBox rtbGPLBrief;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.LinkLabel llbSourceCode;
 
     }
 }

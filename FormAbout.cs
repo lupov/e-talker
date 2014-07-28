@@ -151,5 +151,10 @@ namespace eTalker
         {
             Process.Start(e.LinkText);
         }
+
+        private void llbSourceCode_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(llbSourceCode.Text);
+        }
     }
 }
